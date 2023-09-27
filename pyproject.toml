@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bigdata-nlp"
+version = "0.1.0"
+description = "Big Data NLP"
+authors = ["Savio Teles <savioteles@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+adr-tools-python = "^1.0.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+autoflake = "^1.4"
+google-play-scraper = "^1.2.4"
+pandas = "^2.1.1"
+tqdm = "^2.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
