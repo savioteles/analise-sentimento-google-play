@@ -6,11 +6,8 @@ Google-Play-Scraper fornece APIs para facilmente obter dados do Google Play Stor
 
 """
 import sys
-
-"""Vamos importar as bibliotecas que iremos utilizar para fazer o download e tratamento dos dados de reviews do Google Play Store:"""
-
-import get_app_info
-import get_reviews
+from get_app_info import get_app_info
+from get_reviews import get_reviews
 from sentiment_conversion import to_sentiment
 
 apps_ids = ['com.zzkko', 'com.shopee.br', 'com.mercadolibre', 'com.novapontocom.casasbahia',
