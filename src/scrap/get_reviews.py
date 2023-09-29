@@ -2,7 +2,8 @@ from google_play_scraper import Sort, reviews, app
 from tqdm import tqdm
 import pandas as pd
 
-def get_reviews(apps_ids):
+
+def get_reviews(apps_ids, count=2000):
     """#### Scraping reviews dos apps
 
     O objetivo é criar um dataset balanceado com o mesmo número de reviews para cada score (1-5). A análise de sentimento será realizada utilizando o seguinte critério:
@@ -23,7 +24,7 @@ def get_reviews(apps_ids):
                     lang='pt',
                     country='br',
                     sort=sort_order,
-                    count= 2000 if score == 3 else 1000,
+                    count=count if score == 3 else (count / 2),
                     filter_score_with=score
                 )
                 for r in rvs:

@@ -5,21 +5,24 @@ Para fazer o scraping dos dados do Google Play Store, iremos utilizar a bibliote
 Google-Play-Scraper fornece APIs para facilmente obter dados do Google Play Store utilizando Python sem dependências externas.
 
 """
+import os
 import sys
 from get_app_info import get_app_info
 from get_reviews import get_reviews
 from sentiment_conversion import to_sentiment
 
-apps_ids = ['com.zzkko', 'com.shopee.br', 'com.mercadolibre', 'com.novapontocom.casasbahia',
+APPS_IDS = ['com.zzkko', 'com.shopee.br', 'com.mercadolibre', 'com.novapontocom.casasbahia',
             'com.luizalabs.mlapp', 'com.b2w.americanas', 'com.alibaba.aliexpresshd',
             'com.amazon.mShop.android.shopping', 'com.schibsted.bomnegocio.androidApp',
             'br.com.enjoei.app']
+SIZE = 2000
 
 def main() -> int:
+    apps_ids = os.environ.get('APPS_IDS', APPS_IDS)
     app_infos_df = get_app_info(apps_ids)
     print(app_infos_df)
 
-    app_reviews_df = get_reviews(apps_ids)
+    app_reviews_df = get_reviews(apps_ids, SIZE)
     # cria uma nova coluna 'sentiment' no dataframe
     app_reviews_df['sentiment'] = app_reviews_df.score.apply(to_sentiment)
 
