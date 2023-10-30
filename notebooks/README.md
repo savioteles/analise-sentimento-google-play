@@ -1,6 +1,6 @@
 # Notebooks
 
-Neste tutorial vamos fazer uso de uma técnica denominada Processamento de Linguagem Natural, mais conhecido pelo termo em inglês Natural Language Processing (NLP). O processamento de linguagem natural usa machine learning para revelar a estrutura e o significado do texto. Com aplicativos de processamento de linguagem natural, as organizações podem analisar textos e extrair informações sobre pessoas, lugares e eventos para entender melhor as opiniões em mídias sociais e conversas de clientes.
+Neste tutorial vamos fazer uso de uma técnica denominada Processamento de Linguagem Natural, mais conhecido pelo termo em inglês Natural Language Processing (NLP). Iremos usar a análise de sentimentos para localizar e rotular campos em reviews de usuários do Google Play para entender melhor as opiniões dos clientes e encontrar insights sobre o produto e a experiência do usuário.
 
 Link para os notebooks:
 
