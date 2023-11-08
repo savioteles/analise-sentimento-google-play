@@ -31,7 +31,7 @@ def scrap_google_play(request):
         Response object using `make_response`
         <https://flask.palletsprojects.com/en/1.1.x/api/#flask.make_response>.
     """
-    request_json = request.get_json(silent=True)
+    request_json = request.get_json(force=True)
     request_args = request.args
 
     if request_json and 'apps_ids' in request_json:
@@ -43,6 +43,8 @@ def scrap_google_play(request):
     else:
         apps_ids = APPS_IDS
         size = SIZE
+
+    print(f"request_json: {request_json}")
 
     app_infos_df = get_app_info(apps_ids)
     print(app_infos_df)
