@@ -24,7 +24,7 @@ def get_reviews(apps_ids, count=2000):
                     lang='pt',
                     country='br',
                     sort=sort_order,
-                    count=count if score == 3 else (count / 2),
+                    count=count,
                     filter_score_with=score
                 )
                 for r in rvs:

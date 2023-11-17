@@ -5,14 +5,11 @@ Para fazer o scraping dos dados do Google Play Store, iremos utilizar a bibliote
 Google-Play-Scraper fornece APIs para facilmente obter dados do Google Play Store utilizando Python sem dependências externas.
 
 """
-import os
-import sys
-from get_app_info import get_app_info
-from get_reviews import get_reviews
-from sentiment_conversion import to_sentiment
 import functions_framework
 from flask import Response
 
+from get_app_info import get_app_info
+from get_reviews import get_reviews
 
 APPS_IDS = ['com.zzkko', 'com.shopee.br', 'com.mercadolibre', 'com.novapontocom.casasbahia',
             'com.luizalabs.mlapp', 'com.b2w.americanas', 'com.alibaba.aliexpresshd',
@@ -22,14 +19,8 @@ SIZE = 20
 
 @functions_framework.http
 def scrap_google_play(request):
-    """HTTP Cloud Function.
-    Args:
-        request (flask.Request): The request object.
-        <https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data>
-    Returns:
-        The response text, or any set of values that can be turned into a
-        Response object using `make_response`
-        <https://flask.palletsprojects.com/en/1.1.x/api/#flask.make_response>.
+    """
+    Função de entrada das requisições HTTP.
     """
     request_json = request.get_json(force=True)
     request_args = request.args
