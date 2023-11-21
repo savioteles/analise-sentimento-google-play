@@ -1,5 +1,5 @@
-# Play Reputation: Aplicativo de Análise de Sentimento de reviews do Google Play
-O "Play Reputation" é um aplicativo para análise de sentimento de reviews do Google Play com modelos de Processamento de Linguagem Natural em Big Data com Apache Spark. Iremos utilizar modelos de Deep Learning (DL) com Large Language Models (LLM) para análise de sentimentos. 
+# App Reputation: Aplicativo de Análise de Sentimento de reviews do Google Play
+O `App Reputation` é um aplicativo para análise de sentimento de reviews do Google Play com modelos de Processamento de Linguagem Natural em Big Data com Apache Spark. Iremos utilizar modelos de Deep Learning (DL) com Large Language Models (LLM) para análise de sentimentos. 
 
 Os modelos de DL para análise de sentimentos podem aprender representações de texto automaticamente sem a necessidade de engenharia de feature. Esses modelos podem capturar padrões mais complexos nos dados e podem ter um desempenho melhor em tarefas com mais nuances, como detecção de sarcasmo ou reconhecimento de emoções. No entanto, eles podem exigir conjuntos de dados maiores para treinamento e podem ser computacionalmente caros, exigindo recursos de computação de alto desempenho (GPUs).
 
