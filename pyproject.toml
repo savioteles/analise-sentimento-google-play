@@ -8,12 +8,12 @@ authors = ["Savio Teles <savioteles@gmail.com>"]
 python = ">=3.9, <3.11"
 adr-tools-python = "^1.0.3"
 google-play-scraper = "^1.2.4"
-pandas = "^2.1.1"
-tqdm = "^2.2.3"
-spark-nlp="^5.1.4"
-pyspark="^3.3.1"
-transformers="^4.25.1"
-tensorflow="^2.11.0"
+pandas = "=2.1.1"
+tqdm = "=4.27"
+spark-nlp="=5.1.4"
+pyspark="=3.3.1"
+transformers="=4.25.1"
+tensorflow="=2.11.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"

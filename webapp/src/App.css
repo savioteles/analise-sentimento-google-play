@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+
+
+
+ 
+
+ * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Tammudu 2';
+}
+
+.main-container{
+    display:grid;
+    place-items: center;
+    width:100vw;
+    height:100vh;   
+}
+
+.heading{
+     margin-top:30px;
+     font-size:35px;
+     color:crimson;
+}
+.inputbox{
+    width:60%;
+    border: black 2px solid;
+    text-align:center;
+    font-size:25px;
+    height:45px;
+    border-radius:5px;
+}
+
+.scorecard{
+      margin-top:20px;
+      font-size:23px;
+      
+}
+.img-container{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+}
+
